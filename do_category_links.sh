@@ -8,14 +8,14 @@ FULL_LINK=SYM_CNFS_LINKS/
 
 while read f
 do
+    echo "$f"
     file=$(basename "$f")
 
     path="$PWD/$f"
 
     name=$(find $FULL_LINK -samefile "$path")
 
-    echo $name
-
+    echo "$name"
 
 
     # ln -s "$path" "$LINK/$name"
