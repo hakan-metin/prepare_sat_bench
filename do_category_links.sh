@@ -15,7 +15,7 @@ do
 
     name=$(find $FULL_LINK -samefile "$path")
 
-    echo "$name"
+    echo "$path $name"
 
 
     # ln -s "$path" "$LINK/$name"
